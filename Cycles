@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+// While Döngüsü:İçine aldığı koşul "True=Herhangi Sayı" olduğu sürece devam eden döngüdür.
+// "False=0" olursa döngü biter.
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+
+    // Bir sayıyı 10 kere bastıralım;
+
+    int a=0;
+    int sayi=4;
+    while(a<10){
+        printf("%i\n",sayi);
+        a++; // Sayaç değişkeni a'ı 1 artırmazsak sonsuz döngüye girer çünkü sürekli
+        // a=0 olacaktır ve sürekli bu şart sağlandığı için sürekli True değer
+        // döndürülecektir.
+    }
+
+    // Örnek: 1'den 10'a kadar birer birer arttırarak yazdıralım;
+
+
+    int i=1;
+
+    while(i<=10){
+        printf("i:%i\n",i);
+        i+=1;
+    }
+
+
+    return 0;
+}
