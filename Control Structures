@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+
+    int yas;
+    /*printf("Lütfen yaşınızı giriniz: ");
+    scanf("%i",&yas);
+
+    if (yas>=18){    // Büyük eşit ise
+
+        printf("Ehliyet alabilirsiniz.");
+    }
+
+    else {
+        printf("Ehliyet alamazsınız.");
+    }
+    */
+
+    // En az üç tane farklı durum olursa devreye "else if" bloğu girer.
+
+    // Örnek: Not durumu
+
+    // 0-25 berbat
+    // 25-50 kötü
+    // 50-70 orta
+    // 70-85 iyi
+    // 85-100 çok iyi
+
+    int not;
+    printf("Lütfen notunuzu giriniz:\n");
+    scanf("%i",&not);
+
+    if (0<=not && not<=25){  // "&&", "ve" anlamına gelir
+        printf("Notunuz berbat\n");
+    }
+
+    else if (not<0 || not>100){
+        printf("Hatalı değer girdiniz lütfen tekrar deneyin.");
+    }
+
+    else if (25<not && not<=50){
+        printf("Notunuz kötü\n");
+    }
+
+    else if (50<not && not<70){
+        printf("Notunuz orta\n");
+    }
+
+    else if (70<=not && not<85){
+        printf("Notunuz iyi\n");
+    }
+
+    else {
+        printf("Notunuz çok iyi\n");
+
+    }
+
+
+    return 0;
+}
