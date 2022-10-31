@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main()
+{
+
+    setlocale(LC_ALL,"Turkish");
+
+    int choice;
+    /*printf("Please make a choice\n");
+    printf("1.Spring\n 2.Summer\n 3.Autumn\n 4.Winter\n");
+    scanf("%i",&choice);
+
+    switch(choice){
+
+        case 1:printf(" The weather is sunny.");break;
+        case 2:printf("The weather is very sunny.");break;
+        case 3:printf("The weather is rainy.");break;
+        case 4:printf("The weather is snowy.");break; // "break" kelimeleri konulmasa tüm case durumlar yazdırılır ve bu
+        // da istemediğimiz durum olur.
+        default: printf("Invalid value. Please make a choice in the range of 1-4.");break; // İşlev olarak else bloğuna benzer.
+        // yani hiçbir durum sağlanmadığı durumda.
+
+
+    }*/
+
+
+    char karakter;
+
+    /* printf("Bir karakter giriniz: ");
+    scanf("%c",&karakter);
+
+    switch(karakter){
+
+        case 'ç': printf("ç olmuyor");break;
+        case 'c': printf("c oluyor");break;
+
+    }
+    */
+
+
+    // Kontrol Yapılarını birbirine dönüştürme
+
+
+    char islem;
+    printf("Bir işlem seçiniz: \n");
+    scanf("%c",&islem);
+
+    switch(islem){
+    case '1':
+        printf("Toplama işlemi\n");
+        break;
+
+    case '2':
+        printf("Çıkarma işlemi\n");
+        break;
+
+    case '3':
+        printf("Çarpma işlemi\n");
+        break;
+
+    case '4':
+        printf("Bölme işlemi\n");
+        break;
+
+    default:
+        printf("Hatalı işlem\n");
+        break;
+    }
+
+    return 0;
+}
