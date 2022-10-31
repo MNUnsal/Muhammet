@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+// Do-While Döngüsü: Döngüye bir defa girer ve ondan sonra şartı sorgular. Yani
+// şart ne olursa olsun döngüye bir kere girmek istiyorsak do-while kullanırız.
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+
+    // Şimdi 1'den 10'a kadar sayıları bu döngüyle yazdıralım;
+
+    int a=1;
+    do{
+        printf("%i\n",a);
+        a+=1;
+    }while(a<=10);
+
+
+    return 0;
+}
