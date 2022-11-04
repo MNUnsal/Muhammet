@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+// For Döngüsü
+
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+
+    int i;
+    for(i=0;i<10;i++){
+        printf("%d\n",i);
+        continue;
+    }
+
+    // 1'den 10'a kadar tek sayıları bastıralım;
+
+    printf("*******\n");
+    int v;
+    /*for(v=0;v<10;v++){
+
+        if(v%2!=0){
+            printf("%d\n",v);}
+    } */
+
+    // break&continue İfadeleri: break adı üstünde döngüyü kırar yani bitirir continue ise alttaki satır
+    // veya döngüye atlamadan döngümüze devam etmeyi sağlar.
+    return 0;
+}
